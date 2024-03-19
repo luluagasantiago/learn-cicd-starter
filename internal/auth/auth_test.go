@@ -18,7 +18,6 @@ func TestGetAPIKey(t *testing.T) {
 	}{
 		"No Header": {input: http.Header{}, wantString: "", wantErr: ErrNoAuthHeaderIncluded},
 		"Malforded": {input: http.Header{"Authorization": {"NotApiKey"}}, wantString: "", wantErr: MalformedAuthHeader},
-		"fail":      {input: http.Header{"Authorization": {"NotApiKey"}}, wantString: "", wantErr: "thisAINTWORK"},
 	}
 
 	for name, tc := range tests {
