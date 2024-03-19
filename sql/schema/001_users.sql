@@ -9,3 +9,18 @@ CREATE TABLE users (
 
 -- +goose Down
 DROP TABLE users;
+
+
+
+
+if (bono == 100 OR bono == 135 ){
+    do this
+}
+
+
+OR 
+
+1 1 -> 1 
+1 0 -> 1 
+0 1 -> 1  
+0 0 -> 0
